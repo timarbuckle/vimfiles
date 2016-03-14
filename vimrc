@@ -23,12 +23,20 @@ Plugin 'vim-erlang/vim-erlang-runtime'
 "Plugin 'tpope/vim-surround'
 
 call vundle#end()            " required
+
+filetype on
 filetype plugin indent on    " required
+filetype indent on
 
 
 "
 " {{{ Basic Config
 "
+set number
+set nuw=6
+set ruler
+syntax on
+
 " Set encoding
 set encoding=utf-8
 
@@ -112,5 +120,10 @@ set autoread
 " make uses real tabs
 au FileType make setl noexpandtab
 
+" status bar
 set laststatus=2
 let g:airline_theme='luna'
+
+" highlight current line
+" highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+set cursorline
