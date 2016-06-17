@@ -14,12 +14,13 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-erlang/vim-erlang-runtime'
 "Plugin 'vim-erlang/vim-erlang-compiler'
+Plugin 'scrooloose/nerdtree'
 
-"Plugin 'elzr/vim-json'
+Plugin 'elzr/vim-json'
 "Plugin 'klen/python-mode'
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'tpope/vim-endwise'
-"Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-git'
 "Plugin 'tpope/vim-surround'
 
 call vundle#end()            " required
@@ -129,6 +130,10 @@ au FileType make setl noexpandtab
 set laststatus=2
 let g:airline_theme='luna'
 let g:airline_powerline_fonts = 1
+
+" nerdtree
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
 
 " highlight current line
 " highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
