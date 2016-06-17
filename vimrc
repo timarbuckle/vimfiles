@@ -77,9 +77,14 @@ if has('gui_running')
     else
         set guifont=Hack:h13
     endif
-else
-    :colorscheme mustang
+"else
 endif
+
+:colorscheme lightning
+":colorscheme blackboard
+":colorscheme mustang
+":colorscheme atom
+":colorscheme two2tango
 
 " Swap files. Generally things are in version control
 " don't use backupfiles either.
@@ -123,6 +128,7 @@ au FileType make setl noexpandtab
 " status bar
 set laststatus=2
 let g:airline_theme='luna'
+let g:airline_powerline_fonts = 1
 
 " highlight current line
 " highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
