@@ -28,6 +28,7 @@ call vundle#end()            " required
 filetype on
 filetype plugin indent on    " required
 filetype indent on
+set omnifunc=syntxcomplete#Complete
 
 
 "
