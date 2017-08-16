@@ -25,9 +25,9 @@ Plugin 'tpope/vim-git'
 
 call vundle#end()            " required
 
-filetype on
+"filetype on
 filetype plugin indent on    " required
-filetype indent on
+"filetype indent on
 set omnifunc=syntxcomplete#Complete
 
 
@@ -55,7 +55,7 @@ set showcmd
 set showmatch
 set hidden
 "set list listchars=tab:▸\ ,eol:¬,trail:·
-set list listchars=tab:▸\ ,trail:·
+set list listchars=tab:▸\ ,trail:·,nbsp:·
 set noeol
 set autoindent
 
@@ -103,6 +103,7 @@ set incsearch
 set ignorecase
 set smartcase
 set gdefault
+nnoremap ; :
 "nnoremap / /\v
 "vnoremap / /\v
 set grepprg=ack\ --column
@@ -118,6 +119,7 @@ set spell spelllang=en_ca
 set nospell
 
 " Tab completion
+set wildmenu
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,*.pyc,node_modules/*
 
@@ -137,5 +139,10 @@ let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
 " highlight current line
-" highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+" highlight 81st column
+highlight ColorColumn ctermbg=cyan
+call matchadd('ColorColumn', '\%81v', 100)
+
 set cursorline
+set visualbell
