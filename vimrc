@@ -13,6 +13,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-erlang/vim-erlang-runtime'
+Plugin 'fatih/vim-go'
 "Plugin 'vim-erlang/vim-erlang-compiler'
 
 "Plugin 'elzr/vim-json'
